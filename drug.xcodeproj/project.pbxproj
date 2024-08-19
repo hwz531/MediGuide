@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F5F8A572C6BF54800E6B88C /* drugApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5F8A562C6BF54800E6B88C /* drugApp.swift */; };
+		4F5F8A592C6BF54800E6B88C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5F8A582C6BF54800E6B88C /* ContentView.swift */; };
+		4F5F8A5B2C6BF54B00E6B88C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F5F8A5A2C6BF54B00E6B88C /* Assets.xcassets */; };
+		4F5F8A5E2C6BF54B00E6B88C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F5F8A5D2C6BF54B00E6B88C /* Preview Assets.xcassets */; };
+		4F5F8A682C6BF54B00E6B88C /* drugTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5F8A672C6BF54B00E6B88C /* drugTests.swift */; };
+		4F5F8A722C6BF54B00E6B88C /* drugUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5F8A712C6BF54B00E6B88C /* drugUITests.swift */; };
+		4F5F8A742C6BF54B00E6B88C /* drugUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5F8A732C6BF54B00E6B88C /* drugUITestsLaunchTests.swift */; };
+		4FC55DCC2C7139090094CD34 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 4FC55DCB2C7139090094CD34 /* OpenAI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F5F8A642C6BF54B00E6B88C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F5F8A4B2C6BF54800E6B88C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F5F8A522C6BF54800E6B88C;
+			remoteInfo = drug;
+		};
+		4F5F8A6E2C6BF54B00E6B88C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F5F8A4B2C6BF54800E6B88C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F5F8A522C6BF54800E6B88C;
+			remoteInfo = drug;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F5F8A532C6BF54800E6B88C /* drug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F5F8A562C6BF54800E6B88C /* drugApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drugApp.swift; sourceTree = "<group>"; };
+		4F5F8A582C6BF54800E6B88C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4F5F8A5A2C6BF54B00E6B88C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F5F8A5D2C6BF54B00E6B88C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F5F8A632C6BF54B00E6B88C /* drugTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F5F8A672C6BF54B00E6B88C /* drugTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drugTests.swift; sourceTree = "<group>"; };
+		4F5F8A6D2C6BF54B00E6B88C /* drugUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drugUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F5F8A712C6BF54B00E6B88C /* drugUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drugUITests.swift; sourceTree = "<group>"; };
+		4F5F8A732C6BF54B00E6B88C /* drugUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drugUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F5F8A502C6BF54800E6B88C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FC55DCC2C7139090094CD34 /* OpenAI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5F8A602C6BF54B00E6B88C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5F8A6A2C6BF54B00E6B88C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F5F8A4A2C6BF54800E6B88C = {
+			isa = PBXGroup;
+			children = (
+				4F5F8A552C6BF54800E6B88C /* drug */,
+				4F5F8A662C6BF54B00E6B88C /* drugTests */,
+				4F5F8A702C6BF54B00E6B88C /* drugUITests */,
+				4F5F8A542C6BF54800E6B88C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F5F8A542C6BF54800E6B88C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F5F8A532C6BF54800E6B88C /* drug.app */,
+				4F5F8A632C6BF54B00E6B88C /* drugTests.xctest */,
+				4F5F8A6D2C6BF54B00E6B88C /* drugUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F5F8A552C6BF54800E6B88C /* drug */ = {
+			isa = PBXGroup;
+			children = (
+				4F5F8A562C6BF54800E6B88C /* drugApp.swift */,
+				4F5F8A582C6BF54800E6B88C /* ContentView.swift */,
+				4F5F8A5A2C6BF54B00E6B88C /* Assets.xcassets */,
+				4F5F8A5C2C6BF54B00E6B88C /* Preview Content */,
+			);
+			path = drug;
+			sourceTree = "<group>";
+		};
+		4F5F8A5C2C6BF54B00E6B88C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4F5F8A5D2C6BF54B00E6B88C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4F5F8A662C6BF54B00E6B88C /* drugTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F5F8A672C6BF54B00E6B88C /* drugTests.swift */,
+			);
+			path = drugTests;
+			sourceTree = "<group>";
+		};
+		4F5F8A702C6BF54B00E6B88C /* drugUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4F5F8A712C6BF54B00E6B88C /* drugUITests.swift */,
+				4F5F8A732C6BF54B00E6B88C /* drugUITestsLaunchTests.swift */,
+			);
+			path = drugUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F5F8A522C6BF54800E6B88C /* drug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F5F8A772C6BF54B00E6B88C /* Build configuration list for PBXNativeTarget "drug" */;
+			buildPhases = (
+				4F5F8A4F2C6BF54800E6B88C /* Sources */,
+				4F5F8A502C6BF54800E6B88C /* Frameworks */,
+				4F5F8A512C6BF54800E6B88C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = drug;
+			packageProductDependencies = (
+				4FC55DCB2C7139090094CD34 /* OpenAI */,
+			);
+			productName = drug;
+			productReference = 4F5F8A532C6BF54800E6B88C /* drug.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F5F8A622C6BF54B00E6B88C /* drugTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F5F8A7A2C6BF54B00E6B88C /* Build configuration list for PBXNativeTarget "drugTests" */;
+			buildPhases = (
+				4F5F8A5F2C6BF54B00E6B88C /* Sources */,
+				4F5F8A602C6BF54B00E6B88C /* Frameworks */,
+				4F5F8A612C6BF54B00E6B88C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F5F8A652C6BF54B00E6B88C /* PBXTargetDependency */,
+			);
+			name = drugTests;
+			productName = drugTests;
+			productReference = 4F5F8A632C6BF54B00E6B88C /* drugTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4F5F8A6C2C6BF54B00E6B88C /* drugUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F5F8A7D2C6BF54B00E6B88C /* Build configuration list for PBXNativeTarget "drugUITests" */;
+			buildPhases = (
+				4F5F8A692C6BF54B00E6B88C /* Sources */,
+				4F5F8A6A2C6BF54B00E6B88C /* Frameworks */,
+				4F5F8A6B2C6BF54B00E6B88C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F5F8A6F2C6BF54B00E6B88C /* PBXTargetDependency */,
+			);
+			name = drugUITests;
+			productName = drugUITests;
+			productReference = 4F5F8A6D2C6BF54B00E6B88C /* drugUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F5F8A4B2C6BF54800E6B88C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					4F5F8A522C6BF54800E6B88C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					4F5F8A622C6BF54B00E6B88C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 4F5F8A522C6BF54800E6B88C;
+					};
+					4F5F8A6C2C6BF54B00E6B88C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 4F5F8A522C6BF54800E6B88C;
+					};
+				};
+			};
+			buildConfigurationList = 4F5F8A4E2C6BF54800E6B88C /* Build configuration list for PBXProject "drug" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F5F8A4A2C6BF54800E6B88C;
+			packageReferences = (
+				4F5F8A802C6D384400E6B88C /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
+			productRefGroup = 4F5F8A542C6BF54800E6B88C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F5F8A522C6BF54800E6B88C /* drug */,
+				4F5F8A622C6BF54B00E6B88C /* drugTests */,
+				4F5F8A6C2C6BF54B00E6B88C /* drugUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F5F8A512C6BF54800E6B88C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F5F8A5E2C6BF54B00E6B88C /* Preview Assets.xcassets in Resources */,
+				4F5F8A5B2C6BF54B00E6B88C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5F8A612C6BF54B00E6B88C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5F8A6B2C6BF54B00E6B88C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F5F8A4F2C6BF54800E6B88C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F5F8A592C6BF54800E6B88C /* ContentView.swift in Sources */,
+				4F5F8A572C6BF54800E6B88C /* drugApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5F8A5F2C6BF54B00E6B88C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F5F8A682C6BF54B00E6B88C /* drugTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5F8A692C6BF54B00E6B88C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F5F8A742C6BF54B00E6B88C /* drugUITestsLaunchTests.swift in Sources */,
+				4F5F8A722C6BF54B00E6B88C /* drugUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F5F8A652C6BF54B00E6B88C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F5F8A522C6BF54800E6B88C /* drug */;
+			targetProxy = 4F5F8A642C6BF54B00E6B88C /* PBXContainerItemProxy */;
+		};
+		4F5F8A6F2C6BF54B00E6B88C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F5F8A522C6BF54800E6B88C /* drug */;
+			targetProxy = 4F5F8A6E2C6BF54B00E6B88C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4F5F8A752C6BF54B00E6B88C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F5F8A762C6BF54B00E6B88C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F5F8A782C6BF54B00E6B88C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"drug/Preview Content\"";
+				DEVELOPMENT_TEAM = FX5XB4U2AS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zheng.drug;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F5F8A792C6BF54B00E6B88C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"drug/Preview Content\"";
+				DEVELOPMENT_TEAM = FX5XB4U2AS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zheng.drug;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4F5F8A7B2C6BF54B00E6B88C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FX5XB4U2AS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zheng.drugTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/drug.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/drug";
+			};
+			name = Debug;
+		};
+		4F5F8A7C2C6BF54B00E6B88C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FX5XB4U2AS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zheng.drugTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/drug.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/drug";
+			};
+			name = Release;
+		};
+		4F5F8A7E2C6BF54B00E6B88C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FX5XB4U2AS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zheng.drugUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = drug;
+			};
+			name = Debug;
+		};
+		4F5F8A7F2C6BF54B00E6B88C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FX5XB4U2AS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zheng.drugUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = drug;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F5F8A4E2C6BF54800E6B88C /* Build configuration list for PBXProject "drug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F5F8A752C6BF54B00E6B88C /* Debug */,
+				4F5F8A762C6BF54B00E6B88C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F5F8A772C6BF54B00E6B88C /* Build configuration list for PBXNativeTarget "drug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F5F8A782C6BF54B00E6B88C /* Debug */,
+				4F5F8A792C6BF54B00E6B88C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F5F8A7A2C6BF54B00E6B88C /* Build configuration list for PBXNativeTarget "drugTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F5F8A7B2C6BF54B00E6B88C /* Debug */,
+				4F5F8A7C2C6BF54B00E6B88C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F5F8A7D2C6BF54B00E6B88C /* Build configuration list for PBXNativeTarget "drugUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F5F8A7E2C6BF54B00E6B88C /* Debug */,
+				4F5F8A7F2C6BF54B00E6B88C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F5F8A802C6D384400E6B88C /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4FC55DCB2C7139090094CD34 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F5F8A802C6D384400E6B88C /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4F5F8A4B2C6BF54800E6B88C /* Project object */;
+}
