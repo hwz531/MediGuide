@@ -13,30 +13,22 @@ import OpenAI
 let apiKey = ProcessInfo.processInfo.environment["API_KEY"] ?? "OpenAI key unset"
 let openAI = OpenAI(apiToken: apiKey)
 
-//public struct ImageEditsQuery: Codable {
-//    /// The image to edit, in PNG format (less than 4MB and square).
-//    public let image: Data
-//    public let fileName: String
-//    /// Optional mask image that indicates which parts of the image should be edited.
-//    public let mask: Data?
-//    public let maskFileName: String?
-//    /// A description of the desired image(s).
-//    public let prompt: String
-//    /// Number of images to generate (1-10).
-//    public let n: Int?
-//    /// The size of the generated image (e.g., 256x256, 512x512, 1024x1024).
-//    public let size: String?
-//
-//    public init(image: Data, fileName: String, prompt: String, n: Int? = 1, size: String? = "1024x1024", mask: Data? = nil, maskFileName: String? = nil) {
-//        self.image = image
-//        self.fileName = fileName
-//        self.prompt = prompt
-//        self.n = n
-//        self.size = size
-//        self.mask = mask
-//        self.maskFileName = maskFileName
-//    }
-//}
+
+struct GradientButton: ButtonStyle {
+    var left: Color
+    var right: Color
+    
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .font(.headline)
+            .padding()
+            .frame(maxWidth: .infinity)
+            .background(LinearGradient(gradient: Gradient(colors: [left, right]), startPoint: .leading, endPoint: .trailing))
+            .foregroundColor(.white)
+            .cornerRadius(12)
+            .shadow(radius: 5)
+    }
+}
 
 
 struct ContentView: View {
@@ -97,17 +89,14 @@ struct ContentView: View {
                 alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
                 
                 // Present the alert in SwiftUI by using the root view controller
-                UIApplication.shared.windows.first?.rootViewController?.present(alert, animated: true, completion: nil)
+                guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                      let window = windowScene.windows.first
+                else { return }
+                window.rootViewController?.present(alert, animated: true, completion: nil)
             }) {
                 Text("Select or Capture Image")
-                    .font(.headline)
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(LinearGradient(gradient: Gradient(colors: [Color.blue, Color.cyan]), startPoint: .leading, endPoint: .trailing))
-                    .foregroundColor(.white)
-                    .cornerRadius(12)
-                    .shadow(radius: 5)
             }
+            .buttonStyle(GradientButton(left:Color.blue, right:Color.cyan))
 
             if selectedImage != nil {
                 Button(action: {
@@ -132,14 +121,8 @@ struct ContentView: View {
                     }
                 }) {
                     Text("Get Full Report")
-                        .font(.headline)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(LinearGradient(gradient: Gradient(colors: [Color.green, Color.teal]), startPoint: .leading, endPoint: .trailing))
-                        .foregroundColor(.white)
-                        .cornerRadius(12)
-                        .shadow(radius: 5)
                 }
+                .buttonStyle(GradientButton(left:Color.green, right:Color.teal))
             }
         }
         .padding()
