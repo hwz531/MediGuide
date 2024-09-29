@@ -112,16 +112,21 @@ struct ContentView: View {
             if selectedImage != nil {
                 Button(action: {
                     // Convert image to PNG data and send it to OpenAI for editing
-                    if let data = selectedImage?.pngData() {
-                        let query = ImageEditsQuery(image: data, prompt: "White cat with heterochromia sitting on the kitchen table with a bowl of food", n: 1)
-                        
+                    if let imageData = selectedImage?.jpegData(compressionQuality: 1.0) {
+                        let imgParam = ChatQuery.ChatCompletionMessageParam.ChatCompletionUserMessageParam(content: .vision([
+                            .chatCompletionContentPartImageParam(.init(imageUrl: .init(url: imageData, detail: .high)))
+                        ]))
+                        let query = ChatQuery(messages: [
+                            .user(imgParam),
+                            .user(.init(content: .string("what is in this image?")))
+                        ], model: .gpt4_o, maxTokens: 500)
                         Task {
                             do {
-                                let result = try await openAI.imageEdits(query: query)
+                                let result = try await openAI.chats(query: query)
                                 // Handle OpenAI result here (e.g., display the edited image)
-                                print("Image edited successfully: \(result)")
+                                print("Image parsed successfully: \(result)")
                             } catch {
-                                print("Error editing image: \(error)")
+                                print("Error parsing image: \(error)")
                             }
                         }
                     }
