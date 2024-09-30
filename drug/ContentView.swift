@@ -10,7 +10,8 @@ import PhotosUI
 import OpenAI
 
 
-let apiKey = ProcessInfo.processInfo.environment["API_KEY"] ?? "OpenAI key unset"
+// Add API key to Info.plist
+let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String ?? "key unset"
 let openAI = OpenAI(apiToken: apiKey)
 
 

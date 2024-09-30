@@ -49,6 +49,7 @@
 		4F5F8A732C6BF54B00E6B88C /* drugUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drugUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4F7D3B072CAA3F84008F29A5 /* ImageAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAnalysis.swift; sourceTree = "<group>"; };
 		4F7D3B092CAA3FB0008F29A5 /* EKGAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKGAnalysis.swift; sourceTree = "<group>"; };
+		4F7D3B0B2CAAAA20008F29A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +101,7 @@
 		4F5F8A552C6BF54800E6B88C /* drug */ = {
 			isa = PBXGroup;
 			children = (
+				4F7D3B0B2CAAAA20008F29A5 /* Info.plist */,
 				4F7D3B092CAA3FB0008F29A5 /* EKGAnalysis.swift */,
 				4F7D3B072CAA3F84008F29A5 /* ImageAnalysis.swift */,
 				4F5F8A562C6BF54800E6B88C /* drugApp.swift */,
@@ -441,6 +443,7 @@
 				DEVELOPMENT_TEAM = FX5XB4U2AS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = drug/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Taking pictures of medication";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -471,6 +474,7 @@
 				DEVELOPMENT_TEAM = FX5XB4U2AS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = drug/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Taking pictures of medication";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

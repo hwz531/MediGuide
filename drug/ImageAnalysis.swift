@@ -11,7 +11,7 @@ import OpenAI
 
 struct ImageAnalysis: View {
     @State private var selectedImage: UIImage
-    @State private var AIresponse: String = "Analyzing image..."
+    @State private var AIresponse: AttributedString = "Analyzing image..."
     
     init(image: UIImage) {
         self.selectedImage = image
@@ -44,16 +44,16 @@ struct ImageAnalysis: View {
                     do {
                         let result = try await openAI.chats(query: query)
                         if let response = result.choices[0].message.content {
-                            AIresponse = response.string!
+                            AIresponse = try AttributedString(markdown: response.string!, options: AttributedString.MarkdownParsingOptions(interpretedSyntax: .inlineOnlyPreservingWhitespace))
                         } else {
                             AIresponse = "Failed to get a response from the AI model. Please try again later."
                         }
                     } catch {
-                        print("Error parsing image: \(error)")
+                        AIresponse = AttributedString("Error analyzing image: \(error)")
                     }
                 }
             } else {
-                print("Error getting data from image")
+                AIresponse = "Error getting data from image"
             }
         }
     }
