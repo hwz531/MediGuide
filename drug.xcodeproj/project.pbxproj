@@ -14,6 +14,8 @@
 		4F5F8A682C6BF54B00E6B88C /* drugTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5F8A672C6BF54B00E6B88C /* drugTests.swift */; };
 		4F5F8A722C6BF54B00E6B88C /* drugUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5F8A712C6BF54B00E6B88C /* drugUITests.swift */; };
 		4F5F8A742C6BF54B00E6B88C /* drugUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5F8A732C6BF54B00E6B88C /* drugUITestsLaunchTests.swift */; };
+		4F7D3B082CAA3FA9008F29A5 /* ImageAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D3B072CAA3F84008F29A5 /* ImageAnalysis.swift */; };
+		4F7D3B0A2CAA3FB3008F29A5 /* EKGAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D3B092CAA3FB0008F29A5 /* EKGAnalysis.swift */; };
 		4FC55DCC2C7139090094CD34 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 4FC55DCB2C7139090094CD34 /* OpenAI */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		4F5F8A6D2C6BF54B00E6B88C /* drugUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drugUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F5F8A712C6BF54B00E6B88C /* drugUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drugUITests.swift; sourceTree = "<group>"; };
 		4F5F8A732C6BF54B00E6B88C /* drugUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drugUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4F7D3B072CAA3F84008F29A5 /* ImageAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAnalysis.swift; sourceTree = "<group>"; };
+		4F7D3B092CAA3FB0008F29A5 /* EKGAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKGAnalysis.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 		4F5F8A552C6BF54800E6B88C /* drug */ = {
 			isa = PBXGroup;
 			children = (
+				4F7D3B092CAA3FB0008F29A5 /* EKGAnalysis.swift */,
+				4F7D3B072CAA3F84008F29A5 /* ImageAnalysis.swift */,
 				4F5F8A562C6BF54800E6B88C /* drugApp.swift */,
 				4F5F8A582C6BF54800E6B88C /* ContentView.swift */,
 				4F5F8A5A2C6BF54B00E6B88C /* Assets.xcassets */,
@@ -196,7 +202,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					4F5F8A522C6BF54800E6B88C = {
 						CreatedOnToolsVersion = 15.4;
@@ -266,7 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F5F8A592C6BF54800E6B88C /* ContentView.swift in Sources */,
+				4F7D3B082CAA3FA9008F29A5 /* ImageAnalysis.swift in Sources */,
 				4F5F8A572C6BF54800E6B88C /* drugApp.swift in Sources */,
+				4F7D3B0A2CAA3FB3008F29A5 /* EKGAnalysis.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,7 +491,6 @@
 		4F5F8A7B2C6BF54B00E6B88C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -503,7 +510,6 @@
 		4F5F8A7C2C6BF54B00E6B88C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -523,7 +529,6 @@
 		4F5F8A7E2C6BF54B00E6B88C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FX5XB4U2AS;
@@ -541,7 +546,6 @@
 		4F5F8A7F2C6BF54B00E6B88C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FX5XB4U2AS;
