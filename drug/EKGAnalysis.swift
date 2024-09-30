@@ -19,7 +19,9 @@ struct EKGAnalysis: View {
                 .resizable()
                 .scaledToFit()
             
-            Text("TODO")
+            // TODO
+            Text("70 bpm (min: 60, max: 75)")
+                .font(.system(size: 20))
         }
     }
 }

@@ -11,6 +11,7 @@ import OpenAI
 
 struct ImageAnalysis: View {
     @State private var selectedImage: UIImage
+    @State private var AIresponse: String = "Analyzing image..."
     
     init(image: UIImage) {
         self.selectedImage = image
@@ -26,28 +27,33 @@ struct ImageAnalysis: View {
                 .shadow(radius: 10)
                 .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.blue, lineWidth: 2))
             
-            Button(action: {
-                // Convert image to PNG data and send it to OpenAI for editing
-                if let imageData = selectedImage.jpegData(compressionQuality: 1.0) {
-                    let imgParam = ChatQuery.ChatCompletionMessageParam.ChatCompletionUserMessageParam(content: .vision([
-                        .chatCompletionContentPartImageParam(.init(imageUrl: .init(url: imageData, detail: .high)))
-                    ]))
-                    let query = ChatQuery(messages: [
-                        .user(imgParam),
-                        .user(.init(content: .string("what is in this image?")))
-                    ], model: .gpt4_o, maxTokens: 500)
-                    Task {
-                        do {
-                            let result = try await openAI.chats(query: query)
-                            // Handle OpenAI result here (e.g., display the edited image)
-                            print("Image parsed successfully: \(result)")
-                        } catch {
-                            print("Error parsing image: \(error)")
+            Text(AIresponse)
+                .font(.system(size: 20))
+        }
+        .task {
+            // Send image to OpenAI for analyzing
+            if let imageData = selectedImage.jpegData(compressionQuality: 1.0) {
+                let imgParam = ChatQuery.ChatCompletionMessageParam.ChatCompletionUserMessageParam(content: .vision([
+                    .chatCompletionContentPartImageParam(.init(imageUrl: .init(url: imageData, detail: .high)))
+                ]))
+                let query = ChatQuery(messages: [
+                    .user(imgParam),
+                    .user(.init(content: .string("what is in this image?")))
+                ], model: .gpt4_o, maxTokens: 500)
+                Task {
+                    do {
+                        let result = try await openAI.chats(query: query)
+                        if let response = result.choices[0].message.content {
+                            AIresponse = response.string!
+                        } else {
+                            print("Failed to get a response from the AI model. Please try again later.")
                         }
+                    } catch {
+                        print("Error parsing image: \(error)")
                     }
                 }
-            }) {
-                Text("Get Full Report")
+            } else {
+                print("Error getting data from image")
             }
         }
     }
