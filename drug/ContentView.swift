@@ -63,9 +63,13 @@ struct ContentView: View {
                     .foregroundColor(.blue)
                     .padding(.top, 20)
                 
-                Button {
+                Button("Select or Capture Image") {
                     // Present an alert to choose between camera and photo library
-                    let alert = UIAlertController(title: "Select Source", message: nil, preferredStyle: .actionSheet)
+                    let alert = UIAlertController(
+                        title: "Select Source",
+                        message: nil,
+                        preferredStyle: .actionSheet
+                    )
                     
                     alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { _ in
                         useCamera = true
@@ -79,20 +83,27 @@ struct ContentView: View {
                     
                     alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
                     
-                    // Present the alert in SwiftUI by using the root view controller
                     guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
                           let window = windowScene.windows.first
-                    else { return }
+                    else {
+                        print("Unable to obtain window")
+                        return
+                    }
+                    
+                    // For iPad
+                    if let popoverController = alert.popoverPresentationController {
+                        popoverController.sourceView = window
+                        popoverController.sourceRect = window.bounds
+                        popoverController.permittedArrowDirections = []
+                    }
+                    
+                    // Present the alert in SwiftUI by using the root view controller
                     window.rootViewController?.present(alert, animated: true, completion: nil)
-                } label: {
-                    Text("Select or Capture Image")
                 }
                 .buttonStyle(GradientButton(left:Color.blue, right:Color.cyan))
                 
-                Button {
+                Button("Connect to Wearable Device") {
                     showEKGAnalysis.toggle()
-                } label: {
-                    Text("Connect to Wearable Device")
                 }
                 .navigationDestination(isPresented: $showEKGAnalysis) {
                     EKGAnalysis()

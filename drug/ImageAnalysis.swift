@@ -18,7 +18,7 @@ struct ImageAnalysis: View {
     }
     
     var body: some View {
-        VStack(spacing: 30) {
+        ScrollView {
            Image(uiImage: selectedImage)
                 .resizable()
                 .scaledToFit()
@@ -46,7 +46,7 @@ struct ImageAnalysis: View {
                         if let response = result.choices[0].message.content {
                             AIresponse = response.string!
                         } else {
-                            print("Failed to get a response from the AI model. Please try again later.")
+                            AIresponse = "Failed to get a response from the AI model. Please try again later."
                         }
                     } catch {
                         print("Error parsing image: \(error)")
